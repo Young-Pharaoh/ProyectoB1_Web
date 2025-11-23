@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Manage your account settings and view order history"
+    />
+    <title>My Profile - Static Web Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation">
+      <div class="container">
+        <a href="/products.html" class="navbar-brand" aria-label="Store Home"
+          >ShopStore</a
+        >
+        <ul class="navbar-nav">
+          <li><a href="/products.html">Products</a></li>
+          <li class="nav-cart">
+            <a href="/cart.html" aria-label="Shopping cart with 3 items">
+              Cart
+              <span class="badge" aria-label="3 items">3</span>
+            </a>
+          </li>
+          <li><a href="/profile.html" aria-current="page">Profile</a></li>
+          <li><a href="/login.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Page Header -->
+      <header class="page-header">
+        <div class="container">
+          <h1>My Profile</h1>
+          <p>Manage your account information and view your orders</p>
+        </div>
+      </header>
+
+      <!-- Profile Content -->
+      <section class="container">
+        <div class="profile-layout">
+          <!-- Account Information -->
+          <div class="profile-card">
+            <!-- Profile Header -->
+            <div class="profile-header">
+              <img
+                src="/assets/avatar.jpg"
+                alt="User profile picture"
+                class="profile-avatar"
+              />
+              <div class="profile-header-info">
+                <h2>John Doe</h2>
+                <p>john.doe@example.com</p>
+                <p>Member since January 2024</p>
+              </div>
+            </div>
+
+            <!-- Profile Edit Form -->
+            <form>
+              <h3 style="margin-bottom: var(--space-lg)">
+                Personal Information
+              </h3>
+
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  class="form-input"
+                  value="John Doe"
+                  aria-label="Full name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  value="john.doe@example.com"
+                  aria-label="Email address"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  value="+1 (555) 123-4567"
+                  aria-label="Phone number"
+                />
+              </div>
+
+              <h3
+                style="
+                  margin-top: var(--space-xl);
+                  margin-bottom: var(--space-lg);
+                "
+              >
+                Shipping Address
+              </h3>
+
+              <div class="form-group">
+                <label for="street" class="form-label">Street Address</label>
+                <input
+                  type="text"
+                  id="street"
+                  name="street"
+                  class="form-input"
+                  value="123 Main Street"
+                  aria-label="Street address"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="city" class="form-label">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  class="form-input"
+                  value="San Francisco"
+                  aria-label="City"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="state" class="form-label">State</label>
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  class="form-input"
+                  value="California"
+                  aria-label="State"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="zip" class="form-label">ZIP Code</label>
+                <input
+                  type="text"
+                  id="zip"
+                  name="zip"
+                  class="form-input"
+                  value="94102"
+                  aria-label="ZIP code"
+                />
+              </div>
+
+              <button type="button" class="btn btn-primary btn-block">
+                Save Changes
+              </button>
+            </form>
+          </div>
+
+          <!-- Order History -->
+          <div class="profile-card order-history">
+            <h3>Order History</h3>
+
+            <!-- Order 1 -->
+            <article class="order-item">
+              <div class="order-header">
+                <span class="order-number">Order #10234</span>
+                <span class="order-status">Delivered</span>
+              </div>
+              <div class="order-details">
+                <p>Placed on: March 15, 2024</p>
+                <p>Total: $299.99</p>
+                <p>Items: Premium Wireless Headphones</p>
+              </div>
+            </article>
+
+            <!-- Order 2 -->
+            <article class="order-item">
+              <div class="order-header">
+                <span class="order-number">Order #10198</span>
+                <span class="order-status">Delivered</span>
+              </div>
+              <div class="order-details">
+                <p>Placed on: March 8, 2024</p>
+                <p>Total: $449.98</p>
+                <p>Items: Smart Watch Pro, Designer Backpack</p>
+              </div>
+            </article>
+
+            <!-- Order 3 -->
+            <article class="order-item">
+              <div class="order-header">
+                <span class="order-number">Order #10145</span>
+                <span class="order-status">Delivered</span>
+              </div>
+              <div class="order-details">
+                <p>Placed on: February 28, 2024</p>
+                <p>Total: $149.99</p>
+                <p>Items: Portable Bluetooth Speaker</p>
+              </div>
+            </article>
+
+            <!-- Order 4 -->
+            <article class="order-item">
+              <div class="order-header">
+                <span class="order-number">Order #10089</span>
+                <span class="order-status">Delivered</span>
+              </div>
+              <div class="order-details">
+                <p>Placed on: February 15, 2024</p>
+                <p>Total: $279.99</p>
+                <p>Items: Ergonomic Office Chair</p>
+              </div>
+            </article>
+
+            <!-- Order 5 -->
+            <article class="order-item">
+              <div class="order-header">
+                <span class="order-number">Order #10012</span>
+                <span class="order-status">Delivered</span>
+              </div>
+              <div class="order-details">
+                <p>Placed on: January 30, 2024</p>
+                <p>Total: $394.98</p>
+                <p>Items: 4K Action Camera, LED Desk Lamp</p>
+              </div>
+            </article>
+
+            <a
+              href="#"
+              class="btn btn-outline btn-block"
+              style="margin-top: var(--space-lg)"
+              >View All Orders</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 ShopStore. All rights reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
+          <a href="#">Contact Us</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
