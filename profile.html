@@ -7,7 +7,7 @@
       name="description"
       content="Manage your account settings and view order history"
     />
-    <title>My Profile - Static Web Store</title>
+    <title>Mi Perfil</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,18 +15,18 @@
     <nav class="navbar" role="navigation">
       <div class="container">
         <a href="/products.html" class="navbar-brand" aria-label="Store Home"
-          >ShopStore</a
+          >RetroGroove</a
         >
         <ul class="navbar-nav">
-          <li><a href="/products.html">Products</a></li>
+          <li><a href="/products.html">Productos</a></li>
           <li class="nav-cart">
             <a href="/cart.html" aria-label="Shopping cart with 3 items">
-              Cart
+              Carrito
               <span class="badge" aria-label="3 items">3</span>
             </a>
           </li>
-          <li><a href="/profile.html" aria-current="page">Profile</a></li>
-          <li><a href="/login.html">Logout</a></li>
+          <li><a href="/profile.html">Perfil</a></li>
+          <li><a href="/login.html">Cerrar sesión</a></li>
         </ul>
       </div>
     </nav>
@@ -36,8 +36,8 @@
       <!-- Page Header -->
       <header class="page-header">
         <div class="container">
-          <h1>My Profile</h1>
-          <p>Manage your account information and view your orders</p>
+          <h1>Mi Perfil</h1>
+          <p>Administra la información de tu cuenta y revisa tus pedidos</p>
         </div>
       </header>
 
@@ -49,25 +49,27 @@
             <!-- Profile Header -->
             <div class="profile-header">
               <img
-                src="/assets/avatar.jpg"
+                src="/images/avatar.jpg"
                 alt="User profile picture"
                 class="profile-avatar"
               />
               <div class="profile-header-info">
                 <h2>John Doe</h2>
                 <p>john.doe@example.com</p>
-                <p>Member since January 2024</p>
+                <p>Miembro desde enero de 2024</p>
               </div>
             </div>
 
             <!-- Profile Edit Form -->
             <form>
               <h3 style="margin-bottom: var(--space-lg)">
-                Personal Information
+                Información Personal
               </h3>
 
               <div class="form-group">
-                <label for="full-name" class="form-label">Full Name</label>
+                <label for="full-name" class="form-label"
+                  >Nombre Completo</label
+                >
                 <input
                   type="text"
                   id="full-name"
@@ -79,7 +81,7 @@
               </div>
 
               <div class="form-group">
-                <label for="email" class="form-label">Email Address</label>
+                <label for="email" class="form-label">Correo Electrónico</label>
                 <input
                   type="email"
                   id="email"
@@ -91,13 +93,13 @@
               </div>
 
               <div class="form-group">
-                <label for="phone" class="form-label">Phone Number</label>
+                <label for="phone" class="form-label">Número de Teléfono</label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   class="form-input"
-                  value="+1 (555) 123-4567"
+                  value="0987403256"
                   aria-label="Phone number"
                 />
               </div>
@@ -108,129 +110,129 @@
                   margin-bottom: var(--space-lg);
                 "
               >
-                Shipping Address
+                Dirección de Envío
               </h3>
 
               <div class="form-group">
-                <label for="street" class="form-label">Street Address</label>
+                <label for="street" class="form-label">Dirección</label>
                 <input
                   type="text"
                   id="street"
                   name="street"
                   class="form-input"
-                  value="123 Main Street"
+                  value="123 Calle Principal"
                   aria-label="Street address"
                 />
               </div>
 
               <div class="form-group">
-                <label for="city" class="form-label">City</label>
+                <label for="city" class="form-label">Ciudad</label>
                 <input
                   type="text"
                   id="city"
                   name="city"
                   class="form-input"
-                  value="San Francisco"
+                  value="Quito"
                   aria-label="City"
                 />
               </div>
 
               <div class="form-group">
-                <label for="state" class="form-label">State</label>
+                <label for="state" class="form-label">Provincia</label>
                 <input
                   type="text"
                   id="state"
                   name="state"
                   class="form-input"
-                  value="California"
+                  value="Pichincha"
                   aria-label="State"
                 />
               </div>
 
               <div class="form-group">
-                <label for="zip" class="form-label">ZIP Code</label>
+                <label for="zip" class="form-label">Código Postal</label>
                 <input
                   type="text"
                   id="zip"
                   name="zip"
                   class="form-input"
                   value="94102"
-                  aria-label="ZIP code"
+                  aria-label="Código Postal"
                 />
               </div>
 
               <button type="button" class="btn btn-primary btn-block">
-                Save Changes
+                Guardar Cambios
               </button>
             </form>
           </div>
 
           <!-- Order History -->
           <div class="profile-card order-history">
-            <h3>Order History</h3>
+            <h3>Historial de Pedidos</h3>
 
             <!-- Order 1 -->
             <article class="order-item">
               <div class="order-header">
-                <span class="order-number">Order #10234</span>
-                <span class="order-status">Delivered</span>
+                <span class="order-number">Orden #10234</span>
+                <span class="order-status">Entregado</span>
               </div>
               <div class="order-details">
-                <p>Placed on: March 15, 2024</p>
+                <p>Realizado el: 15 de marzo de 2024</p>
                 <p>Total: $299.99</p>
-                <p>Items: Premium Wireless Headphones</p>
+                <p>Artículos: Auriculares inalámbricos premium</p>
               </div>
             </article>
 
             <!-- Order 2 -->
             <article class="order-item">
               <div class="order-header">
-                <span class="order-number">Order #10198</span>
-                <span class="order-status">Delivered</span>
+                <span class="order-number">Orden #10198</span>
+                <span class="order-status">Entregado</span>
               </div>
               <div class="order-details">
-                <p>Placed on: March 8, 2024</p>
+                <p>Realizado el: 8 de marzo de 2024</p>
                 <p>Total: $449.98</p>
-                <p>Items: Smart Watch Pro, Designer Backpack</p>
+                <p>Artículos: Smart Watch Pro, Designer Backpack</p>
               </div>
             </article>
 
             <!-- Order 3 -->
             <article class="order-item">
               <div class="order-header">
-                <span class="order-number">Order #10145</span>
-                <span class="order-status">Delivered</span>
+                <span class="order-number">Orden #10145</span>
+                <span class="order-status">Entregado</span>
               </div>
               <div class="order-details">
-                <p>Placed on: February 28, 2024</p>
+                <p>Realizado el: 28 de febrero de 2024</p>
                 <p>Total: $149.99</p>
-                <p>Items: Portable Bluetooth Speaker</p>
+                <p>Artículos: Altavoz Bluetooth portátil</p>
               </div>
             </article>
 
             <!-- Order 4 -->
             <article class="order-item">
               <div class="order-header">
-                <span class="order-number">Order #10089</span>
-                <span class="order-status">Delivered</span>
+                <span class="order-number">Orden #10089</span>
+                <span class="order-status">Entregado</span>
               </div>
               <div class="order-details">
-                <p>Placed on: February 15, 2024</p>
+                <p>Realizado el: 15 de febrero de 2024</p>
                 <p>Total: $279.99</p>
-                <p>Items: Ergonomic Office Chair</p>
+                <p>Artículos: Silla de oficina ergonómica</p>
               </div>
             </article>
 
             <!-- Order 5 -->
             <article class="order-item">
               <div class="order-header">
-                <span class="order-number">Order #10012</span>
-                <span class="order-status">Delivered</span>
+                <span class="order-number">Orden #10012</span>
+                <span class="order-status">Entregado</span>
               </div>
               <div class="order-details">
-                <p>Placed on: January 30, 2024</p>
+                <p>Realizado el: 30 de enero de 2024</p>
                 <p>Total: $394.98</p>
-                <p>Items: 4K Action Camera, LED Desk Lamp</p>
+                <p>Artículos: Cámara de acción 4K, Lámpara de escritorio LED</p>
               </div>
             </article>
 
@@ -238,7 +240,7 @@
               href="#"
               class="btn btn-outline btn-block"
               style="margin-top: var(--space-lg)"
-              >View All Orders</a
+              >Ver Todos los Pedidos</a
             >
           </div>
         </div>
@@ -249,10 +251,6 @@
     <footer>
       <div class="container">
         <p>&copy; 2024 ShopStore. All rights reserved.</p>
-        <p>
-          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
-          <a href="#">Contact Us</a>
-        </p>
       </div>
     </footer>
   </body>
