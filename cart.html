@@ -14,23 +14,17 @@
     <!-- Navigation Bar -->
     <nav class="navbar" role="navigation">
       <div class="container">
-        <a href="/products.html" class="navbar-brand" aria-label="Store Home"
-          >ShopStore</a
-        >
+        <a href="/products.html" class="navbar-brand">RetroGroove</a>
         <ul class="navbar-nav">
-          <li><a href="/products.html">Products</a></li>
+          <li><a href="/products.html">Productos</a></li>
           <li class="nav-cart">
-            <a
-              href="/cart.html"
-              aria-current="page"
-              aria-label="Shopping cart with 3 items"
-            >
-              Cart
-              <span class="badge" aria-label="3 items">3</span>
+            <a href="/cart.html">
+              Carrito
+              <span class="badge">3</span>
             </a>
           </li>
-          <li><a href="/profile.html">Profile</a></li>
-          <li><a href="/login.html">Logout</a></li>
+          <li><a href="/profile.html">Perfil</a></li>
+          <li><a href="/login.html">Cerrar sesión</a></li>
         </ul>
       </div>
     </nav>
@@ -40,8 +34,8 @@
       <!-- Page Header -->
       <header class="page-header">
         <div class="container">
-          <h1>Shopping Cart</h1>
-          <p>Review your items before checkout</p>
+          <h1>Carrito de compras</h1>
+          <p>Revisa tus artículos antes de finalizar la compra</p>
         </div>
       </header>
 
@@ -50,20 +44,20 @@
         <div class="cart-layout">
           <!-- Cart Items -->
           <div class="cart-items">
-            <h2>Cart Items (3)</h2>
+            <h2>Artículos en el carrito (3)</h2>
 
             <!-- Cart Item 1 -->
             <article class="cart-item">
               <img
-                src="/assets/product-1.jpg"
-                alt="Premium Wireless Headphones"
+                src="/images/BreachRecord.jpg"
+                alt="Breach Record"
                 class="cart-item-image"
               />
               <div class="cart-item-details">
-                <h3 class="cart-item-title">Premium Wireless Headphones</h3>
+                <h3 class="cart-item-title">Breach Record</h3>
                 <p class="cart-item-price">$299.99</p>
                 <div>
-                  <label for="qty-1">Quantity:</label>
+                  <label for="qty-1">Cantidad:</label>
                   <input
                     type="number"
                     id="qty-1"
@@ -71,33 +65,27 @@
                     value="1"
                     min="1"
                     max="10"
-                    aria-label="Quantity for Premium Wireless Headphones"
                   />
                 </div>
               </div>
               <div class="cart-item-actions">
                 <div class="cart-item-total">$299.99</div>
-                <a
-                  href="#"
-                  class="cart-item-remove"
-                  aria-label="Remove Premium Wireless Headphones from cart"
-                  >Remove</a
-                >
+                <a href="#" class="cart-item-remove">Eliminar</a>
               </div>
             </article>
 
             <!-- Cart Item 2 -->
             <article class="cart-item">
               <img
-                src="/assets/product-3.jpg"
-                alt="Designer Backpack"
+                src="/images/Generated Image November 23, 2025 - 1_12PM.png"
+                alt="Jericho"
                 class="cart-item-image"
               />
               <div class="cart-item-details">
-                <h3 class="cart-item-title">Designer Backpack</h3>
-                <p class="cart-item-price">$89.99</p>
+                <h3 class="cart-item-title">Jericho</h3>
+                <p class="cart-item-price">$299.99</p>
                 <div>
-                  <label for="qty-2">Quantity:</label>
+                  <label for="qty-2">Cantidad:</label>
                   <input
                     type="number"
                     id="qty-2"
@@ -105,77 +93,70 @@
                     value="2"
                     min="1"
                     max="10"
-                    aria-label="Quantity for Designer Backpack"
                   />
                 </div>
               </div>
               <div class="cart-item-actions">
-                <div class="cart-item-total">$179.98</div>
-                <a
-                  href="#"
-                  class="cart-item-remove"
-                  aria-label="Remove Designer Backpack from cart"
-                  >Remove</a
-                >
+                <div class="cart-item-total">$599.98</div>
+                <a href="#" class="cart-item-remove">Eliminar</a>
               </div>
             </article>
 
             <!-- Update Cart Button -->
             <div style="margin-top: var(--space-xl)">
               <button type="button" class="btn btn-secondary">
-                Update Cart
+                Actualizar Carrito
               </button>
             </div>
           </div>
 
           <!-- Cart Summary -->
           <aside class="cart-summary">
-            <h2>Order Summary</h2>
+            <h2>Resumen del Pedido</h2>
 
             <div class="summary-row">
               <span>Subtotal:</span>
-              <span>$479.97</span>
+              <span>$899.97</span>
             </div>
 
             <div class="summary-row">
-              <span>Shipping:</span>
+              <span>Envio:</span>
               <span>$15.00</span>
             </div>
 
             <div class="summary-row">
-              <span>Tax (8%):</span>
-              <span>$38.40</span>
+              <span>Impuesto (8%):</span>
+              <span>$71.99</span>
             </div>
 
             <div class="summary-row total">
               <span>Total:</span>
-              <span>$533.37</span>
+              <span>$986.96</span>
             </div>
 
             <!-- Cart Actions -->
             <div class="cart-actions">
-              <a href="#" class="btn btn-primary btn-block"
-                >Proceed to Checkout</a
-              >
+              <a href="#" class="btn btn-primary btn-block">Proceder al Pago</a>
               <a href="/products.html" class="btn btn-outline btn-block"
-                >Continue Shopping</a
+                >Continuar Comprando</a
               >
             </div>
 
             <!-- Promo Code Section -->
             <form style="margin-top: var(--space-xl)">
               <div class="form-group">
-                <label for="promo-code" class="form-label">Promo Code</label>
+                <label for="promo-code" class="form-label"
+                  >Código Promocional</label
+                >
                 <input
                   type="text"
                   id="promo-code"
                   class="form-input"
-                  placeholder="Enter code"
-                  aria-label="Enter promotional code"
+                  placeholder="Ingrese código"
                 />
               </div>
               <button type="button" class="btn btn-secondary btn-block">
-                Apply Code
+                Aplicar Código
               </button>
             </form>
           </aside>
@@ -187,10 +168,6 @@
     <footer>
       <div class="container">
         <p>&copy; 2024 ShopStore. All rights reserved.</p>
-        <p>
-          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
-          <a href="#">Contact Us</a>
-        </p>
       </div>
     </footer>
   </body>
